@@ -56,3 +56,46 @@ Bastaria adicionar uma etapa extra no workflow usando *actions* específicas par
 - `peaceiris/actions-gh-pages` → para publicar sites estáticos no GitHub Pages;  
 - `appleboy/scp-action` → para enviar arquivos para um servidor remoto via SSH;  
 - Integrações com **AWS**, **Vercel**, **Docker Hub** ou **Firebase Hosting**, permitindo que o código atualizado seja automaticamente implantado após passar pelos testes.
+
+
+## 🧠 Perguntas rápidas
+
+### O que é CD e qual sua relação com CI?  
+💡 **Resposta:**  
+CD significa *Continuous Delivery* (Entrega Contínua) ou *Continuous Deployment* (Implantação Contínua).  
+Ele é o passo seguinte à *Integração Contínua (CI)*.  
+Enquanto a CI garante que o código seja constantemente testado e integrado, o CD automatiza o processo de entrega e/ou publicação do software, permitindo que novas versões sejam disponibilizadas rapidamente e com segurança.
+
+---
+
+### Quais são os benefícios da entrega contínua?  
+💡 **Resposta:**  
+A entrega contínua traz maior agilidade e confiabilidade ao desenvolvimento, pois:  
+- Reduz o tempo entre o desenvolvimento e a entrega ao usuário;  
+- Diminui a chance de erros humanos no deploy;  
+- Facilita a correção rápida de bugs e a entrega de novas funcionalidades;  
+- Mantém o software sempre em um estado pronto para produção.
+
+
+
+## 🧠 4. Para finalizar
+
+### Qual é a principal diferença prática entre CI e CD?  
+💡 **Resposta:**  
+A *Integração Contínua (CI)* foca em integrar e testar o código automaticamente a cada modificação.  
+Já a *Entrega Contínua (CD)* vai além, automatizando o processo de empacotar e disponibilizar o software para implantação.  
+Em resumo: **CI garante que o código funciona**, enquanto **CD garante que ele possa ser entregue rapidamente**.
+
+---
+
+### O que aconteceria se o teste falhasse antes do deploy?  
+💡 **Resposta:**  
+O pipeline seria interrompido automaticamente, e o deploy não aconteceria.  
+Isso evita que código com erros chegue à produção, protegendo a estabilidade do sistema e garantindo que apenas versões validadas sejam publicadas.
+
+---
+
+### Como a entrega contínua aumenta a confiança do time no processo?  
+💡 **Resposta:**  
+Porque todo o ciclo — integração, testes e deploy — é automatizado e reproduzível.  
+O time passa a confiar que cada mudança será testada e implantada de forma consistente, reduzindo riscos, retrabalho e incertezas sobre o estado atual do software.
